@@ -1,45 +1,55 @@
-# Caso Equipo 11 Ideal de Cricket
+# Ideal Cricket Team Case
 
-Este dashboard permite visualizar las características más resaltantes de jugadores del mundial de cricket del 2022.
-Las visualizaciones permiten realizar un análisis detallado por jugador, ver su rendimiento individual y también en equipo.
+📌 Also available in [Spanish](README.es.md) | 📌 Disponible también en [Español](README.es.md)
+
+This dashboard allows the visualization of the most relevant features of players from the 2022 Cricket World Cup to select the top 11.  
+The visualizations enable detailed analysis by player, showing both individual and team performance.
 
 ![](dashboard_analisis_jugadores.JPG)
 
 ![](dashboard_11ideal.JPG)
 
-## Objetivo:
+## Objective:
 
-Analizar a los jugadores que tienen mejores puntuaciones en los indicadores clave, además dichos jugadores deben superar un umbral mínimo para ser considerados en el equipo final, los criterios se encuentran en el siguiente archivo: 📄 [Ver documentación en PDF](./Parametros.pdf). En base a este análisis se seleccionan a los 11 mejores jugadores de cricket.
+To analyze the players with the highest scores in key indicators. Additionally, players must exceed a minimum threshold to be considered for the final team. The selection criteria can be found in the following file: 📄 [View documentation in PDF](./Parameters.pdf). Based on this analysis, the top 11 cricket players are selected.
 
-## Roles de juego:
+## Player roles:
 ```
-  • Bateador fuerte/Openers:      abren el partido y enfrentan las primeras bolas del juego.       
-  • Ancla:                        bateadores más estables, controlan el ritmo del juego. 
-  • Finalizador:                  cierran el inning y pueden estabilizar en situaciones críticas.         
-  • Todoterreno:                  destacados tanto en bateo como en lanzamiento.                    
-  • Lanzador rápido especialista: especializados en velocidad, clave para restringir al rival.
-```
-
-## Indicadores clave:
-```
-  • Promedio de bateo:             promedio de carreras anotadas por el bateador en cada entrada (innings).       
-  • Tasa de bateo (strike):        número de carreras anotadas por cada 100 bolas enfrentadas.                    
-  • Entradas bateadas:             número total de veces que un jugador ha participado como bateador.             
-  • Promedio de bolas enfrentadas: promedio de bolas enfrentadas por el bateador por entrada.                     
-  • % límite:                      porcentaje de carreras anotadas mediante límites (4s y 6s).                     
-  • Posición de bateo:             posición en la que el jugador entra a batear (menor valor = más arriba).       
-  • Entradas lanzadas:             número total de entradas (innings) en las que el jugador ha lanzado.           
-  • Economía de lanzamiento:       promedio de carreras permitidas por over (6 bolas) lanzado.                    
-  • Tasa de strike de lanzamiento: promedio de bolas que necesita un jugador para conseguir un wicket.            
-  • Promedio de lanzamiento:       promedio de carreras permitidas por wicket conseguido.                         
-  • Estilo de lanzamiento:         estilo de lanzamiento del lanzador (Fast, Spin, etc.).                           
-  • % dot ball:                    porcentaje de bolas lanzadas donde no se concedieron carreras.
+  • Power Hitter / Openers:       start the match and face the first balls of the game.
+  • Anchor:                       more stable batters, control the game pace.
+  • Finisher:                     close the innings and can stabilize in critical situations.
+  • All-rounder:                  they excel in both batting and bowling.
+  • Specialist Fast Bowler:       specialized in speed, key to restricting the opponent.
 ```
 
-## Tecnologías y conocimientos aplicados:
-  - Python (Preprocesamiento de datos con Pandas)
+## Key indicators:
+```
+  • Batting Average:              average number of runs scored per innings by the batter.
+  • Strike Rate:                  number of runs scored per 100 balls faced.
+  • Innings Batted:               total number of times a player has batted.
+  • Balls Faced Average:          average number of balls faced per innings.
+  • Boundary %:                   percentage of runs scored through boundaries (4s and 6s).
+  • Batting Position:             the position in which the player enters to bat (lower = earlier).
+  • Innings Bowled:               total number of innings in which the player has bowled.
+  • Economy Rate:                 average number of runs conceded per over (6 balls).
+  • Bowling Strike Rate:          average number of balls needed to take a wicket.
+  • Bowling Average:              average number of runs conceded per wicket taken.
+  • Bowling Style:                bowler's delivery style (Fast, Spin, etc.).
+  • Dot Ball %:                   percentage of balls bowled where no runs were conceded.
+```
+
+## Repository content:
+
+- `data_preprocessing.ipynb`: data preprocessing in Python
+- `dashboard_cricket.pbix`: dashboard developed in Power BI
+- `Parameters.pdf`: PDF document with evaluation criteria
+- `📁data/csv`: folder containing CSV files (dataset)
+- `📁data/json`: folder containing JSON files (dataset)
+
+## Technologies and concepts applied:
+  - Python (data preprocessing with Pandas)
   - Google Colab
-  - Proceso ETL en Power BI
-  - Modelado de datos
+  - Power BI: ETL
+  - Data modeling
   - DAX
   - Storytelling
